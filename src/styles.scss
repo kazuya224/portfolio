@@ -1,0 +1,44 @@
+@import "./sass/vendors/bootstrap.scss";
+
+@import "./sass/abstracts/mixins";
+@import "./sass/abstracts/variables";
+@import "./sass/abstracts/helpers";
+
+@import "./sass/base/base";
+@import "./sass/base/typography";
+
+@import "./sass/components/buttons";
+
+@import "./sass/layout/footer";
+@import "./sass/layout/sections";
+
+@import "./sass/sections/about";
+@import "./sass/sections/contact";
+@import "./sass/sections/hero";
+@import "./sass/sections/projects";
+
+.badge {
+    display: inline-block;
+    padding: 4px 12px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    background-color: #f0f0f0;
+    /* 薄いグレー */
+    color: #333;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border: 1px solid #ddd;
+}
+
+/* 複数リンクの配置調整 */
+.project-links {
+    .text-color-main {
+        font-size: 0.9rem;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

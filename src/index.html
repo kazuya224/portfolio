@@ -1,0 +1,219 @@
+<!--
+  Hello!
+  -
+  Simplefolio is a clean and responsive portfolio template for Developers!
+  Created by Jacobo Martinez.
+  -
+  Github Repo: https://github.com/cobiwave/simplefolio/
+  Readme: https://github.com/cobiwave/simplefolio/README.md
+  -
+  For business & inquires, contact me -> jacobojavier98@gmail.com
+-->
+<!DOCTYPE html>
+<html lang="ja" class="sr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+  <title>ポートフォリオ | エンジニア志望</title>
+  <meta name="description" content="22歳、エンジニア志望のポートフォリオサイトです。" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="styles.scss" />
+  <script defer src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+</head>
+
+<body>
+  <div id="top"></div>
+
+  <section id="hero" class="jumbotron">
+    <div class="container">
+      <h1 class="hero-title load-hidden">
+        こんにちは、<span class="text-color-main">Kazu</span> です。
+        <br />
+        エンジニアとして価値を出せるよう、実装と改善を繰り返しています。
+      </h1>
+      <p class="hero-cta load-hidden">
+        <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about">私について</a>
+      </p>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title load-hidden">自己紹介 / About me</h2>
+      <div class="row about-wrapper">
+        <div class="col-md-6 col-sm-12">
+          <div class="about-wrapper__image load-hidden">
+            <img alt="アイコン" class="img-fluid rounded shadow-lg" height="auto" width="300px" src="assets/icon.png" />
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="about-wrapper__info load-hidden">
+            <p class="about-wrapper__info-text">
+              経済学部在学中の、行動派エンジニア志望です。「最適解を探すより、まず試す」をモットーに、家計簿アプリなどの開発を通じて実用的なアウトプットを積み重ねてきました。
+            </p>
+            <p class="about-wrapper__info-text">
+              自分の強みは、天性ではなく「仕組み化」と「継続」によって結果を手繰り寄せる力です。技術を磨くことはもちろん、将来の起業・海外挑戦を見据え、常にビジネス視点を持って価値を生み出せるエンジニアを目指しています。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <div class="project-wrapper">
+        <h2 class="section-title dark-blue-text">制作実績 / Projects</h2>
+
+        <div class="row">
+          <div class="col-lg-4 col-sm-12">
+            <div class="project-wrapper__text load-hidden">
+              <h3 class="project-wrapper__text-title">家計簿アプリ</h3>
+              <div class="project-tech-stack mb-3">
+                <span class="badge">React</span>
+                <span class="badge">TypeScript</span>
+                <span class="badge">Node.js</span>
+                <span class="badge">SpringBoot</span>
+                <span class="badge">Java</span>
+                <span class="badge">PostgreSQL</span>
+              </div>
+              <p class="mb-4">
+                「多機能過ぎて使いにくい」という自身の悩みを解決するために開発。Reactを用いたCRUD処理の実装や、入力のしやすさを最優先したUI設計を行いました。将来的な機能拡張を見据えたデータ構造の設計を意識しています。
+              </p>
+              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero"
+                href="https://kakeibo-front-rose.vercel.app">サイトを見る</a>
+              <div class="mt-2">
+                <a rel="noreferrer" target="_blank" class="text-color-main"
+                  href="https://github.com/kazuya224/kakeibo.front.git">
+                  <i class="fa fa-github"></i> Front-end Code
+                </a>
+                <span class="mx-2">/</span>
+                <a rel="noreferrer" target="_blank" class="text-color-main"
+                  href="https://github.com/kazuya224/kakeibo-backend.git"> <i class="fa fa-github"></i> Back-end Code
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 col-sm-12">
+            <div class="project-wrapper__image load-hidden">
+              <a rel="noreferrer" href="https://kakeibo-front-rose.vercel.app" target="_blank">
+                <div data-tilt class="thumbnail rounded js-tilt">
+                  <img alt="家計簿アプリ" class="img-fluid" src="assets/kakeiboscreen.png" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-sm-12">
+            <div class="project-wrapper__text load-hidden">
+              <h3 class="project-wrapper__text-title">オセロアプリ</h3>
+              <div class="project-tech-stack mb-3">
+                <span class="badge">React</span>
+                <span class="badge">TypeScript</span>
+                <span class="badge">Node.js</span>
+              </div>
+              <p class="mb-4">
+                TypeScriptの基礎学習として制作。二次元配列による盤面管理や、駒の裏返し判定など、アルゴリズムの根幹を正確に実装することに注力しました。1台のデバイスで交互にプレイするシンプルな対戦型ゲームです。
+              </p>
+              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero"
+                href="https://othello02.vercel.app">サイトを見る</a>
+              <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
+                href="https://github.com/kazuya224/othello.git">ソースコード</a>
+            </div>
+          </div>
+          <div class="col-lg-8 col-sm-12">
+            <div class="project-wrapper__image load-hidden">
+              <a rel="noreferrer" href="#!" target="_blank">
+                <div data-tilt class="thumbnail rounded js-tilt">
+                  <img alt="オセロアプリ" class="img-fluid" src="assets/othello.png" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-sm-12">
+            <div class="project-wrapper__text load-hidden">
+              <h3 class="project-wrapper__text-title">おみくじアプリ</h3>
+              <div class="project-tech-stack mb-3">
+                <span class="badge">React</span>
+                <span class="badge">TypeScript</span>
+                <span class="badge">Node.js</span>
+              </div>
+              <p class="mb-4">
+                「まず試す」という行動重視の姿勢で、スピード感を持って制作。乱数生成による運勢判定と、CSSアニメーションを組み合わせたミニアプリです。シンプルな機能ながら、ユーザーを楽しませる工夫を凝らしました。
+              </p>
+              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero"
+                href="https://omikuji-theta.vercel.app">サイトを見る</a>
+              <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
+                href="https://github.com/kazuya224/omikuji.git">ソースコード</a>
+            </div>
+          </div>
+          <div class="col-lg-8 col-sm-12">
+            <div class="project-wrapper__image load-hidden">
+              <a rel="noreferrer" href="#!" target="_blank">
+                <div data-tilt class="thumbnail rounded js-tilt">
+                  <img alt="おみくじアプリ" class="img-fluid" src="assets/omikuji.png" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">お問い合わせ / Contact</h2>
+      <div class="contact-wrapper load-hidden">
+        <p class="contact-wrapper__text">制作物や私について、興味を持っていただけましたらお気軽にご連絡ください。</p>
+        <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdaJT6guqoC4mM6eAcsQfSldQREnaKUKt7MxvmbuvpokGp0MQ/viewform?usp=publish-editor">お問い合わせフォーム</a>
+      </div>
+    </div>
+  </section>
+  <!-- /END Contact Section -->
+
+  <!-- **** Footer Section **** -->
+  <footer class="footer navbar-static-bottom">
+    <div class="container">
+      <a rel="noreferrer" href="#top" class="back-to-top">
+        <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+      </a>
+      <div class="social-links">
+        <a rel="noreferrer" href="https://twitter.com/vlog_kazu/status/..." target="_blank">
+          <i class="fa fa-twitter fa-inverse"></i>
+        </a>
+        <a rel="noreferrer" href="https://www.youtube.com/@kazusvlog2101" target="_blank">
+          <i class="fa fa-youtube fa-inverse"></i>
+        </a>
+        <a rel="noreferrer" href="https://github.com/kazuya224" target="_blank">
+          <i class="fa fa-github fa-inverse"></i>
+        </a>
+      </div>
+
+      <hr />
+
+      <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
+      <p class="footer__text">
+        © 2021 - Template developed by
+        <a rel="noreferrer" href="https://github.com/cobiwave" target="_blank">Jacobo Martínez</a>
+      </p>
+
+
+    </div>
+  </footer>
+  <!-- /END Footer Section -->
+
+  <script defer type="module" src="index.js"></script>
+</body>
+
+</html>
